@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".Activity.LoginFragment"
+    android:gravity="center_horizontal"
+    android:theme="@style/AppTheme">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/buycodelogo"
+        android:layout_marginBottom="20dp"
+        />
+    <!-- FACEBOOK !-->
+    <LinearLayout
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/face_login_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left"
+        android:background="@drawable/face_logotipo"
+        />
+
+        <TextView
+            android:id="@+id/face_login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrar com facebook"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"
+            android:textColor="@color/Branco"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="270dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/linha_degrade"
+        />
+    <!-- GOOGLE+ !-->
+    <LinearLayout
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clickable="true"
+        >
+    <Button
+        android:id="@+id/sign_in_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left"
+        android:background="@drawable/googlemaisbt"
+        android:clickable="true"
+        />
+
+        <TextView
+            android:id="@+id/sign_in_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrar com google+"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"
+            android:clickable="true"
+            android:textColor="@color/Branco"/>
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:text="or"
+        android:textSize="18dp"
+        android:textColor="@color/Branco"
+        android:textStyle="bold"/>
+
+<!-- CAMPOS DE EMAIL E SENHA !-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_linear_layout1"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+
+
+        <!-- Campo email-->
+        <EditText
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:id="@+id/editText"
+            android:foreground="#00ffffff"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="E-mail"
+            android:textAlignment="center"
+            android:gravity="left"
+            android:singleLine="true"
+            android:typeface="monospace"
+            android:drawableLeft="@drawable/ic_email_login"/>
+    </LinearLayout>
+
+    <!-- Campo senha-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/area1"
+        android:layout_width="wrap_content"
+        android:background="@drawable/border_linear_layout1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp">
+        <EditText
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/editText2"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="Senha"
+            android:textAlignment="center"
+            android:gravity="left"
+            android:typeface="monospace"
+            android:drawableLeft="@drawable/ic_cadeado_login"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:elevation="15dp"
+        android:id="@+id/btgologin"
+        android:background="@drawable/borda_normal"
+        android:text="ENTRAR"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ainda não tem conta? Cadastre-se!"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textColor="@color/Branco"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

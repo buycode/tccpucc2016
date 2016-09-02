@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Activity.ProductSearchActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="beforeDescendants"
+    android:id="@+id/layoutBackground"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <LinearLayout
+            android:id="@+id/area2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/border_linear_layout1"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.75">
+
+            <EditText
+                android:id="@+id/txtScanner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome do produto"
+                android:layout_gravity="left"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:typeface="monospace"
+                android:singleLine="true"
+                />
+
+        </LinearLayout>
+
+
+
+            <ImageView
+                android:id="@+id/btScanner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_scanner"
+                android:scaleType="fitCenter"
+                android:layout_weight="0.25"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp">
+
+       <ImageView
+           android:id="@+id/product_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/txtResult"
+            android:text="Product Name"
+            android:textSize="20dp"
+            android:textColor="@color/Branco"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/borda_normal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/opNutricional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="NUTRICIONAL"
+                android:textSize="30dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/opNutText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Testando conceito\n\n\n\n\n\n\nHaHaHa"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <View
+                android:layout_width="270dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/linha_degrade"
+                />
+            <TextView
+                android:id="@+id/opDicas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DICAS"
+                android:textSize="30dp"
+                android:textAlignment="center"/>
+            <View
+                android:layout_width="270dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/linha_degrade"
+                />
+            <TextView
+                android:id="@+id/opReceitas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RECEITAS"
+                android:textSize="30dp"
+                android:textAlignment="center"/>
+            <View
+                android:layout_width="270dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/linha_degrade"
+                />
+            <TextView
+                android:id="@+id/opOutros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="OUTROS"
+                android:textSize="30dp"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Nutricional"-->
+        <!--android:textSize="30dp"-->
+        <!--android:textAlignment="center"-->
+        <!--android:background="@drawable/borda_normal">-->
+        <!--</TextView>-->
+    </ScrollView>
+
+</LinearLayout>
+

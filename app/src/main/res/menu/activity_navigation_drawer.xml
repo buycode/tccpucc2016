@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_gohome"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_produtos"
+            android:icon="@drawable/ic_produtos"
+            android:title="Produtos" />
+        <item
+            android:id="@+id/nav_listas"
+            android:icon="@drawable/ic_listas"
+            android:title="Listas"
+            android:enabled="false"/>
+        <item
+            android:id="@+id/nav_receitas"
+            android:icon="@drawable/ic_receitas"
+            android:title="Receitas"
+            android:enabled="false"/>
+    </group>
+
+
+    <item android:title="Configurações">
+        <menu>
+            <item
+                android:id="@+id/nav_conta"
+                android:icon="@drawable/ic_conta"
+                android:title="Conta"
+                android:enabled="false"/>
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_sair"
+                android:title="Sair" />
+        </menu>
+    </item>
+
+</menu>

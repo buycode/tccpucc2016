@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "862307664838",
+    "project_id": "buycode-83703"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862307664838:android:d229b0e274c8a671",
+        "android_client_info": {
+          "package_name": "com.example.tcc.buycode"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "862307664838-eedo771693b6cvn00h3g0sngubl1gc1h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tcc.buycode",
+            "certificate_hash": "501EF7793321A25C2A43249AA66A3F7F52921002"
+          }
+        },
+        {
+          "client_id": "862307664838-ihq3p75k58gicb3u1vcs1smhs6cscj6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKQ8EnlIg92cDNhuQkrUSPN9O2SWUZ5No"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
