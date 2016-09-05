@@ -102,7 +102,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_weight="0.5"
-            android:text="Salvar"
+            android:text="Deus nos salvara"
             android:background="@drawable/borda_normal"/>
     </LinearLayout>
 </LinearLayout>
